@@ -1,0 +1,1994 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body{
+    font-family:sans-serif ;
+    overflow-x: hidden;
+    height: 0px;
+}
+/* navbar */
+.navbar{
+    display:flex;
+    /* background-color: grey; */
+    justify-content: space-around;
+    height: 90px;
+    padding-top: 30px;
+    align-items: center;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.navbar li {
+    list-style: none; 
+}
+.navbar a{
+    color: white;
+    position: relative;
+    left: -20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+   
+}
+.navbar a:hover{
+    color: red;
+}
+
+/* .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    } */
+    .book{
+        display: flex;
+        position: relative;
+    }
+
+    .book button {
+    position: absolute;
+    right: -850px;
+    top: -20px;
+    width: 120px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0, 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #DE0000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px rgba(29, 29, 29, 0.253);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+    .shop{
+        position: relative;
+    }
+    .shop img{
+        width: 25px;
+        position: absolute;
+        right: 50px;
+        top: -15px;
+        cursor: pointer;
+    }
+
+    
+
+/* menu sidebar */
+
+.menu-btn{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-btn input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    right: -8px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;  
+    z-index: 2px; 
+}
+
+.menu-btn span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+/* Animation */
+.menu-btn span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-btn span:last-child{
+    transform-origin: 0 0;
+}
+.menu-btn input:checked ~ :nth-child(2){
+    transform: rotate(45deg) translate(0px,-1px);
+}
+.menu-btn input:checked ~ :nth-child(3){
+    transform: scale(0);
+}
+.menu-btn input:checked ~ :last-child{
+    transform: rotate(-45deg) translate(0px,0px);
+}
+
+.book button:hover {
+    background-color: red;
+    box-shadow: 0px 15px 20px rgba(207, 54, 54, 0.363);
+    color: #ffffff;
+    transform: translateY(-7px);
+    }
+.read:hover {
+    background-color: red;
+    box-shadow: 0px 15px 20px rgba(207, 54, 54, 0.363);
+    color: #ffffff;
+    transform: translateY(-7px);
+    }
+.daftar1 button:hover {
+    background-color: red;
+    box-shadow: 0px 15px 20px rgba(207, 54, 54, 0.363);
+    color: #ffffff;
+    transform: translateY(-7px);
+    }
+
+@keyframes ketik {
+    from {
+       width: 0;
+       }
+    }
+
+    @-webkit-keyframes animasi-ketik {
+    from {
+       width: 0;
+       }
+    }
+
+@keyframes putar {
+    from {
+       -webkit-transform: rotate(0deg);
+    }
+    to {
+       -webkit-transform: rotate(360deg);
+    }
+    }
+
+    .leaf1 img:hover {
+        transform: translateX(150px);
+        }
+    .paprika img:hover {
+        transform: translateX(-150px);
+        }
+    .read:hover {
+        background-color: red;
+        box-shadow: 0px 15px 20px rgba(207, 54, 54, 0.363);
+        color: #ffffff;
+        transform: translateY(-7px);
+        }
+    
+    .layan img:hover {
+        transform: scale(1.2);
+        opacity: 100%;
+        }
+    .layan1 img:hover {
+        transform: scale(1.2);
+        opacity: 100%;
+        }
+    .layan2 img:hover {
+        transform: scale(1.2);
+        opacity: 100%;
+        }
+
+
+
+/* BACKGROUND */
+.latar{
+    display: flex;
+    background-image: url(IMAGE/bg.jpg);
+    width: 1450px;
+    height: 710px;
+    background-position: center center;
+    margin-top: -130px;
+    background-size: cover;
+}
+.latar1{
+    display: flex;
+    background-image: url(IMAGE/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 710px;
+}
+.latar2{
+    display: flex;
+    background-image: url(IMAGE/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 910px;
+    position: absolute;
+    top: 200%;
+}
+.latar3{
+    display: flex;
+    background-image: url(IMAGE/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 650px;
+    position: relative;
+    top: 65px;
+}
+.latar4{
+    display: flex;
+    background-image: url(IMAGE/Group\ 14.png);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 750px;
+    position: relative;
+    top: -205px;
+}
+.latar5{
+    display: flex;
+    background-image: url(IMAGE/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 780px;
+    position: relative;
+    top: -205px;
+}
+
+.latar7{
+    display: flex;
+    background-image: url(IMAGE/3.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 1450px;
+    height: 320px;
+    position: relative;
+    top: -830px;
+}
+
+/* end Background */
+
+/* HOMEPAGE */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    color: white;
+    width: 600px;
+}
+.home h2{
+    font-family: 'Pacifico', cursive;
+    color: #DE0000;
+    font-size: 40px;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing s infinite linear;
+    animation: animasi-ketik 10s infinite linear;
+}
+.home h1{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+}
+.home p{
+    font-family: 'Roboto', sans-serif;
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.hom{
+    position: relative;
+}
+.hom img{
+    position: absolute;
+    right: 90px;
+    top: -550px;
+    width: 40%;
+    animation: putar 15s infinite linear;
+}
+.leaf{
+    position: relative;
+}
+.leaf img{
+    position: absolute;
+    width: 20%;
+    top: -150px;
+    left: -100px;  
+}
+.leaf1{
+    position: relative;
+}
+.leaf1 img{
+    position: absolute;
+    width: 10%;
+    top: -400px;
+    left: 680px;
+    transition: 1s ease 0s;
+}
+.powder{
+    position: relative;
+}
+.powder img{
+    position: absolute;
+    width: 25%;
+    top: -150px;
+    right: -115px;  
+}
+.powder1{
+    position: relative;
+}
+.powder1 img{
+    position: absolute;
+    width: 30%;
+    top: -550px;
+    left: -200px;  
+}
+.paprika{
+    position: relative;
+}
+.paprika img{
+    position: absolute;
+    width: 10%;
+    top: -400px;
+    right: 30px;
+    transition: 1s ease 0s;
+}
+
+/* end HOMEPAGE */
+/* ABOUT */
+.tentang{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: -600px;
+    right: -650px;
+
+}
+.tentang h3{
+    font-family: 'Pacifico', cursive;
+    color: #DE0000;
+    font-size: 80px;
+}
+.tentang h4{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    top: 80px;
+}
+.tentang p{
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+.read{
+    width: 120px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0, 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #DE0000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px rgba(29, 29, 29, 0.253);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 250px;
+}
+.bubur{
+    position: relative;
+}
+.bubur img{
+    width: 40%;
+    position: absolute;
+    top: -850px;
+    right: 650px;
+    animation: putar 15s infinite linear;
+}
+.gandum{
+    position: relative;
+}
+.gandum img{
+    width: 35%;
+    position: absolute;
+    right: -200px;
+    top: -650px;
+}
+.rice{
+    position: relative;
+}
+.rice img{
+    width: 30%;
+    position: absolute;
+    right: -150px;
+    top: -780px;
+}
+.blueberry{
+    position: relative;
+}
+.blueberry img{
+    width: 25%;
+    position: absolute;
+    left: -150px;
+    top: -680px;
+}
+
+/* end ABOUT */
+/* MENU */
+.menu{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+}
+.menu h3{
+    font-family: 'Pacifico', cursive;
+    color: #DE0000;
+    font-size: 80px;
+    position: absolute;
+    top: -200px;
+}
+.menu h4{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: -120px;
+}
+.fitur{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 400px;
+    justify-content: center;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+.fitur h5{
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto',sans-serif;
+
+}
+.special{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.special h5{
+    color: white;
+    background-color: #DE0000;
+    border: none;
+    border-radius: 6px;
+    width: 135px;
+    height: 25px;
+    letter-spacing: 0 , 5px;
+    text-align: center;
+    padding: 10px 0; 
+}
+.special p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.porridge{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.porridge h5{
+    color: white;
+    background-color: #DE0000;
+    border: none;
+    border-radius: 6px; 
+    width: 145px;
+    height: 25px;
+    letter-spacing: 0 , 5px;
+    text-align: center;
+    padding: 10px 0; 
+}
+.porridge p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.pasta{
+    position: relative;
+}
+.pasta img{
+    width: 35%;
+    position: absolute;
+    left: -150px;
+    top: -750px;
+    animation: putar 20s infinite linear;
+}
+.pizza{
+    position: relative;
+}
+.pizza img{
+    width: 26%;
+    position: absolute;
+    right: -100px;
+    top: -300px;
+    animation: putar 20s infinite linear;
+}
+.chili{
+    position: relative;
+}
+.chili img{
+    width: 22%;
+    position: absolute;
+    left: -90px;
+    top: -250px;
+    transform: rotate(90deg);
+}
+.daun{
+    position: relative;
+}
+.daun img{
+    width: 12%;
+    position: absolute;
+    top: -700px;
+}
+.daun1{
+    position: relative;
+}
+.daun1 img{
+    width: 12%;
+    position: absolute;
+    right: 0px;
+    top: -300px;
+}
+/* end MENU */
+/* SERVICES */
+.services{
+    display: flex;
+    position: relative;
+    justify-content: center; 
+}
+.services h3{
+    font-family: 'Pacifico', cursive;
+    color: #DE0000;
+    font-size: 80px;
+    position: absolute;
+    top: -550px;
+}
+.services h4{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: -470px;
+}
+.layanan{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 20px;
+    justify-content: center;
+    position: relative;
+    top: -340px;
+    color: white;
+}
+.layan{
+    position: relative;
+    text-align: center;
+}
+.layan img{
+    width: 60%;
+    opacity: 50%;
+    transition: 1s;
+    filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+}
+.layan h4{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.layan p{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    padding-top: 5px;
+    color:#9F9F9F;
+}
+.layan1{
+    position: relative;
+    text-align: center;
+}
+.layan1 img{
+    width: 60%; 
+    opacity: 50%;
+    transition: 1s; 
+    filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+}
+.layan1 h4{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.layan1 p{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    padding-top: 5px;
+    color:#9F9F9F;
+}
+.layan2{
+    position: relative;
+    text-align: center;
+}
+.layan2 img{
+    width: 60%;  
+    opacity: 50%;
+    transition: 1s;
+    filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+}
+.layan2 h4{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.layan2 p{
+    width: 300px;
+    position: absolute;
+    left: 30px;
+    padding-top: 5px;
+    color:#9F9F9F;
+}
+/* end SERVICES */
+/* BOOK TABLE */
+.daftar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.daftar h3{
+    font-family: 'Pacifico', cursive;
+    color: #DE0000;
+    font-size: 80px;
+    position: absolute;
+    right: 250px;
+    top: -835px;
+}
+.daftar h4{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 50px;
+    position: absolute;
+    right: 255px;
+    top: -760px
+}
+form{
+    position: relative;
+}
+.daftar1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 50px;
+    position: absolute;
+    right: 200px;
+    top: -650px;
+    /* z-index: 3px; */
+}
+.daftar1 input{
+    width: 200px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.596);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;  
+    padding-left: 10px;
+    cursor: pointer;
+}
+.daftar1 input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.733);
+    padding-left: 10px;
+    }
+.daftar1 button{
+    width: 120px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0, 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #DE0000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px rgba(29, 29, 29, 0.253);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 170px;
+    top: 120%;
+}
+
+/* end BOOK TABLE */
+/* CONTACT US */
+    .kontak{
+        display: flex;
+        background-color:black;
+        height: 500px;
+        color: white;
+        position: relative;
+        top: -910px;
+    }
+    .kontak h3{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 80px;
+        position: absolute;
+        left: 50px;
+    }
+    .kontak h4{
+        color: white;
+        font-family: 'Roboto',sans-serif;
+        font-size: 50px;
+        position: absolute;
+        top: 75px;
+        left: 100px;
+    }
+    .kontak p:nth-child(3){
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+    .kontak p:nth-child(4){
+        position: absolute;
+        top: 250px;
+        left: 50px;
+    }
+    .kontak iframe{
+        position: absolute;
+        right: 0px;
+        filter: brightness(70%);
+    }
+/* end CONTACT US */
+/* Tampilan Bawah */
+    .logo1{
+        position: relative;
+    }
+    .logo1 img{
+        width: 9%;
+        position: absolute;
+        left: 50px;
+        top: -1050px;
+    }
+    .bawah{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 400px 160px;
+        justify-content: center;
+        position: relative;
+        right: -60px;
+        top: -1070px;
+    }
+    .links{
+        position:relative;
+    }
+    .links h3{
+        font-family: 'Roboto',sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    .links a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        padding-top: 20px;
+        
+    }
+    .links a:hover{
+        color: red;
+    }
+    .porpizz{
+        text-align: center;
+        position: relative;
+    }
+    .porpizz h3{
+        font-family: 'Roboto',sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    .porpizz p{
+        font-family: 'Roboto',sans-serif;
+        font-size: 16px;
+        padding-top: 20px;
+        width: 350px;
+        color: white;
+    }
+    .media{
+        font-family: 'Roboto',sans-serif;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+    .btn1{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #00000060;
+        top: -10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #172efc;
+        overflow: hidden;
+        position: relative;
+       
+      }
+      .btn2{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #00000060;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #f31c1c;
+        overflow: hidden;
+        position: relative;
+      }
+      .btn3{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #00000060;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #fa00c4;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .btn1 i,.btn2 i,.btn3 i{
+        line-height: 30px;
+        font-size: 18px;
+        transition: 0.2s linear;
+        padding-top: 10px;
+        
+      }
+      .btn1:hover i,.btn2:hover i,.btn3:hover i{
+        transform: scale(1.3);
+        color: #f1f1f1;
+      }
+      
+      .btn1::before{
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #0042f8;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+      .btn2::before{
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #f80015;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+      .btn3::before{
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #fa00c4;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+      
+      .btn1:hover::before{
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+      }
+      .btn2:hover::before{
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+      }
+      .btn3:hover::before{
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+      }
+      
+      @keyframes aaa {
+        0%{
+          left: -110%;
+          top: 90%;
+        }50%{
+          left: 10%;
+          top: -30%;
+        }100%{
+          top: -10%;
+          left: -10%;
+        }
+      }  
+/* end Tampilan Bawah */
+/* Footer */
+      footer{
+          background-color: black;
+          height: 40px;
+          text-align: center;
+          padding-top: 20px;
+          font-family: 'Roboto',sans-serif;
+          font-size: 16px;
+          color: white;
+          position: relative;
+          top:-1010px;
+      }
+      footer a{
+          color: white;
+          font-family: 'Roboto',sans-serif;
+          font-size: 16px;
+      }
+/* end Footer */
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoint */
+/* ukuran desktop */
+@media screen and (min-width:1200px){
+    .navbar ul{
+        width: 30%;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: absolute;
+        left: 22%;
+    }
+    .logo{
+        position: absolute;
+        left: 10%;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 250px;
+        left: 120px;
+        color: white;
+        width: 600px;
+    }
+    .home h2{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 40px;
+        width: 450px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 6s infinite linear;
+        animation: animasi-ketik 5s infinite linear;
+    }
+    .home h1{
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 60px;
+    }
+    .home p{
+        font-family: 'Roboto', sans-serif;
+        color: #9F9F9F;
+        font-size: 16px;
+    }
+    
+    .hom{
+        position: relative;
+    }
+    .hom img{
+        position: absolute;
+        right: 90px;
+        top: -550px;
+        width: 40%;
+        animation: putar 15s infinite linear;
+    }
+    .leaf{
+        position: relative;
+    }
+    .leaf img{
+        position: absolute;
+        width: 20%;
+        top: -150px;
+        left: -100px;  
+    }
+    .leaf1{
+        position: relative;
+    }
+    .leaf1 img{
+        position: absolute;
+        width: 10%;
+        top: -400px;
+        left: 680px;
+        transition: 1s ease 0s;
+    }
+    .powder{
+        position: relative;
+    }
+    .powder img{
+        position: absolute;
+        width: 25%;
+        top: -150px;
+        right: -115px;  
+    }
+    .powder1{
+        position: relative;
+    }
+    .powder1 img{
+        position: absolute;
+        width: 30%;
+        top: -550px;
+        left: -200px;  
+    }
+    .paprika{
+        position: relative;
+    }
+    .paprika img{
+        position: absolute;
+        width: 10%;
+        top: -400px;
+        right: 30px;
+        transition: 1s ease 0s;
+    }
+    
+    /* end HOMEPAGE */
+    /* ABOUT */
+    .tentang{
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: -600px;
+        right: -650px;
+    
+    }
+    .tentang h3{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 80px;
+    }
+    .tentang h4{
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 40px;
+        position: absolute;
+        top: 80px;
+    }
+    .tentang p{
+        width: 500px;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .read{
+        width: 120px;
+        height: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0, 5px;
+        font-weight: bold;
+        color: white;
+        background-color: #DE0000;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 15px 15px rgba(29, 29, 29, 0.253);
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        top: 250px;
+    }
+    .bubur{
+        position: relative;
+    }
+    .bubur img{
+        width: 40%;
+        position: absolute;
+        top: -850px;
+        right: 650px;
+        animation: putar 15s infinite linear;
+    }
+    .gandum{
+        position: relative;
+    }
+    .gandum img{
+        width: 35%;
+        position: absolute;
+        right: -200px;
+        top: -650px;
+    }
+    .rice{
+        position: relative;
+    }
+    .rice img{
+        width: 30%;
+        position: absolute;
+        right: -150px;
+        top: -780px;
+    }
+    .blueberry{
+        position: relative;
+    }
+    .blueberry img{
+        width: 25%;
+        position: absolute;
+        left: -150px;
+        top: -680px;
+    }
+    
+    /* end ABOUT */
+    /* MENU */
+    .menu{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+    }
+    .menu h3{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 80px;
+        position: absolute;
+        top: -200px;
+    }
+    .menu h4{
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 50px;
+        position: absolute;
+        top: -120px;
+    }
+    .fitur{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 50px 400px;
+        justify-content: center;
+        color: white;
+        position: relative;
+        top: 30px;
+    }
+    .fitur h5{
+        color: white;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-family: 'Roboto',sans-serif;
+    
+    }
+    .special{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .special h5{
+        color: white;
+        background-color: #DE0000;
+        border: none;
+        border-radius: 6px;
+        width: 135px;
+        height: 25px;
+        letter-spacing: 0 , 5px;
+        text-align: center;
+        padding: 10px 0; 
+    }
+    .special p{
+        font-family: 'Roboto',sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .porridge{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .porridge h5{
+        color: white;
+        background-color: #DE0000;
+        border: none;
+        border-radius: 6px; 
+        width: 145px;
+        height: 25px;
+        letter-spacing: 0 , 5px;
+        text-align: center;
+        padding: 10px 0; 
+    }
+    .porridge p{
+        font-family: 'Roboto',sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .pasta{
+        position: relative;
+    }
+    .pasta img{
+        width: 35%;
+        position: absolute;
+        left: -150px;
+        top: -750px;
+        animation: putar 20s infinite linear;
+    }
+    .pizza{
+        position: relative;
+    }
+    .pizza img{
+        width: 26%;
+        position: absolute;
+        right: -100px;
+        top: -300px;
+        animation: putar 20s infinite linear;
+    }
+    .chili{
+        position: relative;
+    }
+    .chili img{
+        width: 22%;
+        position: absolute;
+        left: -90px;
+        top: -250px;
+        transform: rotate(90deg);
+    }
+    .daun{
+        position: relative;
+    }
+    .daun img{
+        width: 12%;
+        position: absolute;
+        top: -700px;
+    }
+    .daun1{
+        position: relative;
+    }
+    .daun1 img{
+        width: 12%;
+        position: absolute;
+        right: 0px;
+        top: -300px;
+    }
+    /* end MENU */
+    /* SERVICES */
+    .services{
+        display: flex;
+        position: relative;
+        justify-content: center; 
+    }
+    .services h3{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 80px;
+        position: absolute;
+        top: -550px;
+    }
+    .services h4{
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 50px;
+        position: absolute;
+        top: -470px;
+    }
+    .layanan{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px 20px;
+        justify-content: center;
+        position: relative;
+        top: -340px;
+        color: white;
+    }
+    .layan{
+        position: relative;
+        text-align: center;
+    }
+    .layan img{
+        width: 60%;
+        opacity: 50%;
+        transition: 1s;
+        filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+    }
+    .layan h4{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .layan p{
+        width: 300px;
+        position: absolute;
+        left: 30px;
+        padding-top: 5px;
+        color:#9F9F9F;
+    }
+    .layan1{
+        position: relative;
+        text-align: center;
+    }
+    .layan1 img{
+        width: 60%; 
+        opacity: 50%;
+        transition: 1s; 
+        filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+    }
+    .layan1 h4{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .layan1 p{
+        width: 300px;
+        position: absolute;
+        left: 30px;
+        padding-top: 5px;
+        color:#9F9F9F;
+    }
+    .layan2{
+        position: relative;
+        text-align: center;
+    }
+    .layan2 img{
+        width: 60%;  
+        opacity: 50%;
+        transition: 1s;
+        filter: drop-shadow(20px 15px 15px rgba(0, 0, 0, 0.822));
+    }
+    .layan2 h4{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .layan2 p{
+        width: 300px;
+        position: absolute;
+        left: 30px;
+        padding-top: 5px;
+        color:#9F9F9F;
+    }
+    /* end SERVICES */
+    /* BOOK TABLE */
+    .daftar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .daftar h3{
+        font-family: 'Pacifico', cursive;
+        color: #DE0000;
+        font-size: 80px;
+        position: absolute;
+        right: 250px;
+        top: -835px;
+    }
+    .daftar h4{
+        color: white;
+        font-family: 'Roboto',sans-serif;
+        font-size: 50px;
+        position: absolute;
+        right: 255px;
+        top: -760px
+    }
+    form{
+        position: relative;
+    }
+    .daftar1{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px 50px;
+        position: absolute;
+        right: 200px;
+        top: -650px;
+        /* z-index: 3px; */
+    }
+    .daftar1 input{
+        width: 200px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.596);
+        border: none;
+        outline: none;
+        color: rgba(255, 255, 255, 0.849);
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;  
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .daftar1 input::placeholder {
+        font-family: 'Roboto', sans-serif;
+        color: rgba(255, 255, 255, 0.733);
+        padding-left: 10px;
+        }
+    .daftar1 button{
+        width: 120px;
+        height: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0, 5px;
+        font-weight: bold;
+        color: white;
+        background-color: #DE0000;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 15px 15px rgba(29, 29, 29, 0.253);
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        right: 170px;
+        top: 120%;
+    }
+    
+    /* end BOOK TABLE */
+    /* CONTACT US */
+        .kontak{
+            display: flex;
+            background-color:black;
+            height: 500px;
+            color: white;
+            position: relative;
+            top: -910px;
+        }
+        .kontak h3{
+            font-family: 'Pacifico', cursive;
+            color: #DE0000;
+            font-size: 80px;
+            position: absolute;
+            left: 50px;
+        }
+        .kontak h4{
+            color: white;
+            font-family: 'Roboto',sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 75px;
+            left: 100px;
+        }
+        .kontak p:nth-child(3){
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+        .kontak p:nth-child(4){
+            position: absolute;
+            top: 250px;
+            left: 50px;
+        }
+        .kontak iframe{
+            position: absolute;
+            right: 0px;
+            filter: brightness(70%);
+        }
+    /* end CONTACT US */
+    /* Tampilan Bawah */
+        .logo1{
+            position: relative;
+        }
+        .logo1 img{
+            width: 9%;
+            position: absolute;
+            left: 50px;
+            top: -1050px;
+        }
+        .bawah{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 400px 160px;
+            justify-content: center;
+            position: relative;
+            right: -60px;
+            top: -1070px;
+        }
+        .links{
+            position:relative;
+        }
+        .links h3{
+            font-family: 'Roboto',sans-serif;
+            color: white;
+            font-weight: 500;
+        }
+        .links a{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            padding-top: 20px;
+            
+        }
+        .links a:hover{
+            color: red;
+        }
+        .porpizz{
+            text-align: center;
+            position: relative;
+        }
+        .porpizz h3{
+            font-family: 'Roboto',sans-serif;
+            color: white;
+            font-weight: 500;
+        }
+        .porpizz p{
+            font-family: 'Roboto',sans-serif;
+            font-size: 16px;
+            padding-top: 20px;
+            width: 350px;
+            color: white;
+        }
+        .media{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+        }
+        .btn1{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #00000060;
+            top: -10px;
+            border-radius: 30%;
+            box-shadow: 0 5px 15px -5px #00000070;
+            color: #172efc;
+            overflow: hidden;
+            position: relative;
+           
+          }
+          .btn2{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #00000060;
+            margin: 10px;
+            border-radius: 30%;
+            box-shadow: 0 5px 15px -5px #00000070;
+            color: #f31c1c;
+            overflow: hidden;
+            position: relative;
+          }
+          .btn3{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #00000060;
+            margin: 10px;
+            border-radius: 30%;
+            box-shadow: 0 5px 15px -5px #00000070;
+            color: #fa00c4;
+            overflow: hidden;
+            position: relative;
+          }
+          
+          .btn1 i,.btn2 i,.btn3 i{
+            line-height: 30px;
+            font-size: 18px;
+            transition: 0.2s linear;
+            padding-top: 10px;
+            
+          }
+          .btn1:hover i,.btn2:hover i,.btn3:hover i{
+            transform: scale(1.3);
+            color: #f1f1f1;
+          }
+          
+          .btn1::before{
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #0042f8;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+          }
+          .btn2::before{
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #f80015;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+          }
+          .btn3::before{
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #fa00c4;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+          }
+          
+          .btn1:hover::before{
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+          }
+          .btn2:hover::before{
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+          }
+          .btn3:hover::before{
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+          }
+          
+          @keyframes aaa {
+            0%{
+              left: -110%;
+              top: 90%;
+            }50%{
+              left: 10%;
+              top: -30%;
+            }100%{
+              top: -10%;
+              left: -10%;
+            }
+          }  
+    /* end Tampilan Bawah */
+    /* Footer */
+          footer{
+              background-color: black;
+              height: 40px;
+              text-align: center;
+              padding-top: 20px;
+              font-family: 'Roboto',sans-serif;
+              font-size: 16px;
+              color: white;
+              position: relative;
+              top:-1010px;
+          }
+          footer a{
+              color: white;
+              font-family: 'Roboto',sans-serif;
+              font-size: 16px;
+          }
+    /* end Footer */
+    
+}
+/* ukuran tablet */
+@media screen and (max-width:768px){
+    .navbar ul{
+        width: 30%;
+    }
+    .wrap{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    
+}
+
+/* ukuran hp */
+@media screen and (max-width:767px){
+    /* navbar hp */
+    body{
+        height: 0px;
+    }
+    .navbar ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: black;
+        z-index: -1;
+        transform: translateX(100%);
+    }
+    .logo{
+        position: relative;
+        left: -70px;
+    }
+    .menu-btn{
+         display: flex;
+    }
+    .book{
+        display: none;
+    }
+    .shop{
+        display: none;
+    }
+     /* end navbar hp */
+    /* homepage hp */
+    .home{
+        display: flex;
+        position: absolute;
+        left: 80px
+        
+    }
+    .home h2{
+        font-size: 30px;
+    }
+    .home h1{
+        font-size: 35px;
+    }
+    .hom{
+        display: none;
+    }
+    .leaf{
+        display: none;
+    }
+    .leaf1{
+        display: none;
+    }
+    .powder{
+        display: none;
+    }
+    .powder1{
+        display: none;
+    }
+    .paprika{
+        display: none;
+    }
+    /* end homepage hp */
+    /* about */
+    .tentang{
+        display: flex;
+        position: relative;
+        align-items: center;
+        left: -30px;
+
+    }
+    .tentang h3{
+        font-size: 60px;
+        position: absolute;
+        left: 120px;
+        top: -200px;
+    }
+    .tentang h4{
+        font-size: 30px;
+        position: absolute;
+        left: 120px;
+        top: -140px;
+    }
+    .tentang p{
+        font-size: 16px;
+        width: 350px;
+        position: absolute;
+        left: 120px;
+        top: -100px;
+    }
+    .read{
+        position: absolute;
+        left: 120px;
+        top: 45px;
+    }
+    .bubur{
+        display: none;
+    }
+    .blueberry{
+        display: none;
+    }
+    .gandum{
+        display: none;
+    }
+    .rice{
+        display: none;
+    }
+    /*end about */
+    /* menu */
+    .menu{
+        display: flex;
+        position: relative;
+        top: -110px;
+    }
+    .menu h3{
+        font-size: 60px;
+    }
+    .menu h4{
+        font-size: 35px;
+        position: absolute;
+        top: -140px;
+    }
+    .fitur{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -140px;
+        left: 150px;
+    }
+    .pasta{
+        display: none;
+    }
+    .pizza{
+        display: none;
+    }
+    .chili{
+        display: none;
+    }
+    .daun{
+        display: none;
+    }
+    .daun1{
+        display: none;
+    }
+    .latar2{
+        height: 1020px;  
+    }
+    .latar3{
+        height: 1350px;
+        position: relative;
+        top: -45px;
+    }
+    /* end menu */
+    /* services */
+    .services{
+        display: flex;
+        position: relative;
+        top: -750px;
+    }
+    .services h3{
+        font-size: 60px;
+    }
+    .services h4{
+        position: absolute;
+        top: -490px;
+        font-size: 40px;
+
+    }
+    .layanan{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: -1100px;
+    }
+    .layan img{
+        width: 40%;
+    }
+    .layan p{
+       position: absolute;
+       left: 120px;
+    }
+    .layan1{
+        position: relative;
+        top: 80px;
+    }
+    .layan1 p{
+        position: absolute;
+        left: 120px;
+    }
+    .layan1 img{
+        width: 40%;
+    }
+    .layan2{
+        position: relative;
+        top: 160px;
+    }
+    .layan2 p{
+        position: absolute;
+        left: 120px;
+        
+    }
+    .layan2 img{
+        width: 40%;
+    }
+    /* end services */
+    /* book table */
+    .latar4{
+        display: none;
+    }
+    .daftar{
+        display: none;
+    }
+    .daftar1{
+        display: none;
+    }
+    /* end book table */
+    .latar5{
+        height: 1000px;
+        position: relative;
+        top: -895px;
+    }
+    /* contact */
+    .kontak {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: unset; 
+        position: relative;
+    }
+    .kontak h3{
+        position: absolute;
+        top: -170%;
+        left: 100px;
+        font-size: 60px;
+    }
+    .kontak h4{
+        position: absolute;
+        top: -159%;
+        left: 130px;
+        font-size: 40px;
+    }
+    .kontak iframe{
+        display: flex;
+        width: 485px;
+        position: absolute;
+        top: -110%;
+        left: 0px;
+    }
+    .kontak p{
+        display: none;
+    }
+    /* end contact */
+    .latar6{
+        display: none;
+    }
+    .latar7{
+        display: none;
+    }
+    .logo1{
+        display: none;
+    }
+    .bawah{
+        display: none;
+    }
+    /* contact */
+    footer{
+        display: none;
+    }
+}
+   
+
+
+
+
+      
